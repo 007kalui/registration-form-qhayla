@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form - Qhayla Savira</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff1f2;
+      margin: 0;
+      padding: 30px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(180, 84, 95, 0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #b8545f;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #5f3438;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e6b8bd;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #c96b75;
+    }
+
+    .option-group {
+      margin-top: 5px;
+      padding: 10px;
+      background-color: #fff7f7;
+      border-radius: 6px;
+    }
+
+    .option-group label {
+      display: inline-block;
+      margin: 5px 15px 5px 0;
+      font-weight: normal;
+      color: #5f3438;
+    }
+
+    .option-group input {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    .submit-button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #d98b93;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #c96b75;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="#" method="post">
+
+    <h1>Registration Form</h1>
+
+    <label for="fullname">Full Name</label>
+    <input
+      type="text"
+      id="fullname"
+      name="fullname"
+      placeholder="Enter your full name"
+      required
+    >
+
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    >
+
+    <label for="phone">Phone Number</label>
+    <input
+      type="text"
+      id="phone"
+      name="phone"
+      placeholder="Enter your phone number"
+      required
+    >
+
+    <label>Gender</label>
+    <div class="option-group">
+      <label>
+        <input type="radio" name="gender" value="male">
+        Male
+      </label>
+
+      <label>
+        <input type="radio" name="gender" value="female">
+        Female
+      </label>
+    </div>
+
+    <label>Hobbies</label>
+    <div class="option-group">
+      <label>
+        <input type="checkbox" name="hobbies" value="movies">
+        Watching Movies & Series
+      </label>
+
+      <label>
+        <input type="checkbox" name="hobbies" value="music">
+        Listening to Music & Podcasts
+      </label>
+
+      <label>
+        <input type="checkbox" name="hobbies" value="gaming">
+        Gaming
+      </label>
+
+      <label>
+        <input type="checkbox" name="hobbies" value="hanging-out">
+        Hanging Out with Friends
+      </label>
+
+      <label>
+        <input type="checkbox" name="hobbies" value="exercise">
+        Exercise
+      </label>
+
+      <label>
+        <input type="checkbox" name="hobbies" value="reading">
+        Reading
+      </label>
+    </div>
+
+    <label for="dob">Date of Birth</label>
+    <input
+      type="date"
+      id="dob"
+      name="dob"
+      required
+    >
+
+    <label for="program">Program of Study</label>
+    <select id="program" name="program" required>
+      <option value="">-- Select Program --</option>
+      <option value="information-systems">Information Systems</option>
+      <option value="computer-science">Computer Science</option>
+      <option value="business-management">Business Management</option>
+      <option value="accounting">Accounting</option>
+      <option value="communication">Communication</option>
+    </select>
+
+    <label for="address">Full Address</label>
+    <textarea
+      id="address"
+      name="address"
+      placeholder="Enter your full address"
+      required
+    ></textarea>
+
+    <button type="submit" class="submit-button">
+      Submit
+    </button>
+
+  </form>
+
+</body>
+
+</html>
